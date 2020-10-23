@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_practice"
+        android:icon="@mipmap/home_icon"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/navigation_style"
+        android:icon="@mipmap/cart_icon"
+        android:title="购物车" />
+
+    <item
+        android:id="@+id/navigation_example"
+        android:icon="@mipmap/mine_icon"
+        android:title="我的"/>
+
+
+
+</menu>

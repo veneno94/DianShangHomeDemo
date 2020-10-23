@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DianShangDemo</string>
+    <string name="app_name2">男装</string>
+    <string name="app_name3">女装</string>
+    <string name="app_name4">外套</string>
+    <string name="app_name5">包包</string>
+    <string name="app_name6">鞋子</string>
+    <string name="app_name7">手表</string>
+
+</resources>

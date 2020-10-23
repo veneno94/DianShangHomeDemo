@@ -1,0 +1,35 @@
+package com.dianshang.demo;
+
+import android.app.Application;
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatDelegate;
+
+import com.scwang.smart.refresh.layout.SmartRefreshLayout;
+import com.scwang.smart.refresh.layout.api.RefreshLayout;
+import com.scwang.smart.refresh.layout.listener.DefaultRefreshInitializer;
+
+
+/**
+ *
+ * Created by scwang on 2017/6/11.
+ */
+public class App extends Application {
+
+    static {
+        //启用矢量图兼容
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+        //设置全局默认配置（优先级最低，会被其他设置覆盖）
+        SmartRefreshLayout.setDefaultRefreshInitializer(new DefaultRefreshInitializer() {
+            @Override
+            public void initialize(@NonNull Context context, @NonNull RefreshLayout layout) {
+                layout.getLayout().setTag("close egg");
+            }
+        });
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+}
