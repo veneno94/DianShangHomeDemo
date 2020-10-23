@@ -125,6 +125,8 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
             @Override
             public void onClick(View v) {
 //                header.openTwoLevel(true);
+                isFlag = !isFlag;
+                scrollToTop(isFlag);
             }
         });
 
@@ -187,7 +189,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
         if (behavior instanceof AppBarLayout.Behavior) {
             AppBarLayout.Behavior appBarLayoutBehavior = (AppBarLayout.Behavior) behavior;
             if (flag) {
-                appBarLayoutBehavior.setTopAndBottomOffset(0); //快熟滑动到顶部
+                appBarLayoutBehavior.setTopAndBottomOffset(0); //快速滑动到顶部
             } else {
                 int hight = appBarLayout.getHeight() - mTabLayout.getHeight();
                 appBarLayoutBehavior.setTopAndBottomOffset(-hight);//快速滑动实现吸顶效果
