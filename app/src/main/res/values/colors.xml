@@ -12,5 +12,6 @@
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorBackgroundDark">#f2f2f2</color>
     <color name="colorDivision">#33aaaaaa</color>
+    <color name="aaa">#aaa</color>
 
 </resources>

@@ -26,13 +26,12 @@
                 android:src="@mipmap/image_second_floor" />
 
 
-            <com.scwang.smart.refresh.header.ClassicsHeader
+            <com.dianshang.demo.refresh.ClassicsHeader
                 android:id="@+id/classics"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="?attr/actionBarSize"
-                app:srlAccentColor="#aaa"
-                app:srlPrimaryColor="@color/colorBackgroundDark" />
+                 />
         </com.scwang.smart.refresh.header.TwoLevelHeader>
 
         <android.support.design.widget.CoordinatorLayout

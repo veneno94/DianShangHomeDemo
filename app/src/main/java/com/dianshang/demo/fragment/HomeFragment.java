@@ -29,6 +29,7 @@ import com.dianshang.demo.activity.SecondLevelActivity;
 import com.dianshang.demo.adapter.BaseRecyclerAdapter;
 import com.dianshang.demo.adapter.SmartViewHolder;
 import com.dianshang.demo.recyclerview.HeadFootRecyclerView;
+import com.dianshang.demo.refresh.ClassicsHeader;
 import com.dianshang.demo.util.StatusBarUtil;
 import com.scwang.smart.refresh.header.TwoLevelHeader;
 import com.scwang.smart.refresh.header.listener.OnTwoLevelListener;
@@ -76,6 +77,8 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
         final View floor = root.findViewById(R.id.second_floor);
         final View toolbar = root.findViewById(R.id.toolbar);
         final TwoLevelHeader header = root.findViewById(R.id.header);
+        final ClassicsHeader classics = root.findViewById(R.id.classics);
+
 
         final RefreshLayout refreshLayout = root.findViewById(R.id.refreshLayout);
         refreshLayout.setOnMultiListener(new SimpleMultiListener() {
@@ -106,6 +109,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
          */
         header.setEnableTwoLevel(true);
 //        floor.setVisibility(View.GONE);
+        classics.setHeaderTextColor(R.color.aaa);
 
         /**
          * 是否禁止在二极状态时上滑关闭状态回到初态
@@ -139,6 +143,9 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
             }
         });
 
+
+//        refreshLayout.setRefreshHeader(new ClassicsHeader(getActivity()));
+//        refreshLayout.setHeaderHeight(60);
 
         refreshLayout.setEnableLoadMore(false);
         refreshLayout.setOnRefreshListener(this);
