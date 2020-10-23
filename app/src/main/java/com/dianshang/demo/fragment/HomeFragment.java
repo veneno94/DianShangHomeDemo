@@ -214,7 +214,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
                 }
 
             }
-        }, 2000);
+        }, 300);
 
     }
 
