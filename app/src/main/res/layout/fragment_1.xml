@@ -23,7 +23,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/image_second_floor" />
+                android:src="@mipmap/image_weibo_home_2" />
 
 
             <com.dianshang.demo.refresh.ClassicsHeader
