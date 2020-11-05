@@ -102,6 +102,9 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
             }
         });
 
+        refreshLayout.setDragRate(0.8f);
+        header.setMaxRage(8f);
+
         /**
          * 设置是否开启二级刷新
          * @param enabled 是否开启

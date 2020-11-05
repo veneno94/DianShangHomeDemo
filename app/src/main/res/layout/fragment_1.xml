@@ -162,7 +162,7 @@
                 android:drawableLeft="@mipmap/home_search"
                 android:drawablePadding="6dp"
                 android:gravity="center_vertical"
-                android:hint="请输入搜索商品"
+                android:hint="xuelei"
                 android:imeOptions="actionSearch"
                 android:singleLine="true"
                 android:textColor="#333333"
